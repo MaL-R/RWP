@@ -234,41 +234,6 @@ def plot_barb_colorbar(img, ax, newcmp, bounds, norm):
                              ' ',' ',' ',' ','15',' ',' ',' ',' ',' ','flag'])
     cbar.set_label('Wind speed [m/s]', rotation=90)
     
-#def plot_ALLbarb_filter(chosenDate, data, mode, optionSave, pathSave, optionFilter):
-#    matplotlib.rcParams.update({'font.size': 24})
-#    data = data.iloc[np.arange(0,data.shape[0],optionFilter),:]
-#    modeAltitude = high_mode if mode == 'high' else low_mode
-#    bounds = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
-#    newcmp = colormap4flag()
-#    norm = matplotlib.colors.BoundaryNorm(bounds, newcmp.N)
-#    
-#    fig = plt.subplots();
-#    plt.gca().set_title('Date : '+chosenDate)
-#    img = plt.barbs(data['Time_written'], data['Altitude [m, ASL]'].divide(1000),data['East [m/s]'], 
-#                    data['North [m/s]'],data['Speed'], cmap=newcmp,norm=norm, 
-#                    sizes=dict(emptybarb=0.1), fill_empty=True,linewidth =1.5, pivot='middle');
-#             #sizes=dict(emptybarb=0.2, spacing=1e-10, height=0.5), length=6, pivot='middle', 
-#    
-#    plt.xlabel('Time UTC');
-#    plt.ylabel('Altitude [km, ASL]');
-#
-#    plt.gca().set_xlim(data['Time_written'].min(), data['Time_written'].max());
-#    plt.gca().set_ylim(data['Altitude [m, ASL]'].divide(1000).min()-0.1, data['Altitude [m, ASL]'].divide(1000).max());
-#    plt.gca().xaxis.set_major_locator(mdates.HourLocator(interval = 2))
-#    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))
-#    plt.xticks(rotation=45);
-#    
-#    cbar = plt.colorbar(img, cmap=newcmp, norm=norm, boundaries=bounds, ticks=bounds)
-#    cbar.ax.set_yticklabels(['0','1','2','3','4','5','6','7','8','9','10',
-#                             '11','12','13','14','15','16','17','18','19','20','flag'])
-#
-#    cbar.set_label('Wind speed [m/s]', rotation=90)
-#    
-#    plt.gcf().set_size_inches(32, 18)
-#    if optionSave is True:
-#        plt.savefig(pathSave+'WindBarbs'+chosenDate) 
-#        plt.close()
-#        print('Saving wind barbs for date : '+chosenDate)
 
 def plotWindBarbs(chosenDate, data, mode, optionSave, pathSave, optionFilter,limitLow,limitHigh):
     

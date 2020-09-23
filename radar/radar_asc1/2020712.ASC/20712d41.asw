@@ -1,0 +1,229 @@
+DEGREANE HORIZON S.A.S.   Cuers
+
+                     Radar RT Processor (V 6.47 A (i18))
+
+12/07/20 13:41
+
+
+colour : Min SNR
+north orientation   : 0.00 deg
+altitude correction : 0.00 m
+time correction     : 1 min
+processing duration   : 36 min
+time between processing : 10 min
+directions : vector(6/[315.0,73.0] 8/[45.0,73.0] 5/[0.0,90.0])
+            -vector(7/[135.0,73.0] 9/[225.0,73.0])
+             colour(5/[0.0,90.0])
+used raw data : 13:02:21 -> 13:38:06
+
+consensus parameters:
+   width of window                : 2.0 m/s
+   minimum success rate           : 30%
+   minimum number of measurements : 30%
+   SNR threshold                  : 0.00 dB
+   W correction                   : 1
+   instantaneous                  : 1
+   Doppler min: clear air,vertical : 5.8 m/s
+   Doppler min: clear air,oblique  : 5.8 m/s
+   Doppler min: rain,vertical      : 10.0 m/s
+   Doppler min: rain,oblique       : 13.0 m/s
+
+gate coherency
+   sigma vel	:1.0 m/s
+   sigma width	:1.0 m/s
+   sigma sig	:12.0 
+   sigma skew	:100.0 m/s
+   sigma prod	:250.0 
+   max sigma prod	:300.0 
+   delta populat	:25.0 %
+   Rejection threshold:6 
+     directions : 1 2 3 4 5 
+
+Residual GCR
+     directions : 1 2 . 4 5 
+   max vel	:0.10
+   min Radial Vel	:100.00
+   min dVel/dz	:0.001
+   max skew       :3.0e-001 
+   sigma vel min  :0.50 m/s
+   sigma vel ref  :0.25 m/s
+   population ref :30.0 
+   probability min  :5.0 %
+radial coherency
+   velocity gradient      :5.0 
+   signal gradient        :5.0 
+   Vel Ttest threshold:5.0e+000 %
+   Width Ttest threshold:5.0e+000 %
+   Sigma Vel Ftest threshold:2.0e+000 %
+   Sigma Width Ftest threshold:1.0e+000 %
+   Rejection threshold:3 
+oblique coherence
+   Width Ttest threshold      :5.0e+000 %
+   Sigma Vel Ftest threshold  :5.0e+000 %
+   Sigma Width Ftestthreshold :2.0e+000 %
+   Rejection threshold        :2 
+
+Temporal coherency
+   velocity gradient      :5.0 
+   width gradient         :3.0 
+   signal gradient        :5.0 
+   velocity gradient      :1.5 
+   signal gradient        :2.5 
+   Wel Ttest threshold    :5.0e+000 %
+   Width Ttest threshold  :5.0e+000 %
+   Signal Ttest threshold :1.0e+000 %
+   Sigma Vel Ftest threshold :5.0e+000 %
+   Sigma Width Ftestthreshold:5.0e+000 %
+   Sigma Sig Ftest threshold :1.0e+000 %
+   Rejection threshold       :4 
+
+profils coherency
+   min speed           : 2.0 m/s
+   threshold speed     : 10.0/5.0 m/s
+   threshold W speed   : 10.0/4.0 m/s
+   threshold UV speed  : 8.0/4.0 m/s
+   threshold direction : 55 °
+   threshold UV level  : 20 dB
+   threshold W level   : 20 dB
+   threshold min wind: 1.0 m/s
+   threshold max wind: 100.0 m/s
+   Validation Interval: 3 updates
+
+multi-peak parameters:
+ground clutter suppression : weight : 500
+Spectral Filtering (Gauss^N :1.5  centered: 1 recursive :1 level: 2)
+     velocity : 0.000-0.200 m/s
+     min slope : 700.000 m/s/m
+     directions : 1 2 . 4 5 
+clutter suppression : weight : 200
+Spectral Filtering (Gauss^N :2.0  centered: 0 recursive :1 level: 4)
+     velocity : 11.000-20.000 m/s
+     min slope : 700.000 m/s/m
+     directions : 1 2 3 4 5 
+DC Filter
+     directions : 1 2 . 4 5 
+     Nbr Points : 3 3 . 3 3
+   reference gate : 3
+      used continuity        weight     max gradient
+   temporal on velocity     :    500     0.040 m/s/min
+   spatial on velocity      :    800     0.020 m/s/m
+   use only best peak
+
+rain detection parameters (see ground clutter):
+   altitude min   : 0 m
+   altitude max   : 10000 m
+   altitude range : 3 m
+   SNRB min        : 15 dB
+   velocity min   : 1.2 m/s
+   width min      : 1.2 m/s
+   Include PCA detection: 1
+   Automatic Rain Concensus 0
+   Consensus duration 10 min
+   update rate 1 min
+
+Epsilon Calculation Parameters
+   Oblique coefficient:0.85
+   vertical coefficient  :0.91
+   residual offset        :0.07
+   Epsilon coef               :0.50
+
+Boundary Layer Calculation Parameters
+   Min SNR                          :0.0 dB
+   Max daytime height   :7000.0 m
+   Max nightime height :1000.0 m
+   Min consensus score     :20.0 %
+   processing duration   : 0 min
+
+
+    Altitude    East      North     vertical     dd         ff         Min SNR
+    m (MSL)     m/s        m/s        m/s         °         m/s        dB     
+*     596     //////     //////     //////     //////     //////       2.38
+      653      -4.86      -5.81      -0.05      39.93       7.58      17.70
+      711      -5.82      -6.67      -0.06      41.07       8.85      20.55
+      768      -5.89      -6.37      -0.13      42.75       8.67      19.71
+      825      -5.37      -7.30      -0.12      36.33       9.06      18.82
+      883      -6.25      -6.69       0.00      43.04       9.16      17.64
+      940      -5.52      -7.36      -0.17      36.86       9.19      17.64
+      997      -5.90      -6.54      -0.11      42.06       8.81      17.88
+     1055      -5.85      -6.33       0.01      42.73       8.62      18.82
+     1112      -6.34      -5.52       0.04      48.96       8.41      18.51
+     1169      -5.95      -4.75       0.17      51.35       7.61      17.27
+     1227      -7.23      -5.22       0.23      54.18       8.92      19.68
+     1284      -7.09      -4.42       0.29      58.05       8.36      18.66
+     1341      -7.04      -4.58       0.33      56.94       8.40      17.53
+     1399      -5.52      -3.43       0.19      58.19       6.50      15.75
+     1456      -5.60      -2.35      -0.02      67.26       6.07      18.94
+     1513      -5.84      -2.73      -0.18      64.93       6.45      17.96
+     1571      -4.72      -2.25      -0.26      64.57       5.23      22.42
+     1628      -3.85      -1.75      -0.35      65.56       4.23      23.84
+     1685      -3.08      -2.16      -0.10      54.97       3.76      23.89
+     1743      -3.19      -2.92      -0.04      47.47       4.33      22.75
+     1800      -2.63      -2.65      -0.00      44.75       3.74      22.57
+     1857      -2.16      -1.94      -0.01      48.00       2.90      19.64
+     1915      -2.14       0.48       0.00     102.70       2.19      15.04
+     1972      -3.17       1.58       0.05     116.43       3.54      13.15
+     2029      -2.17       2.94      -0.07     143.53       3.66      10.80
+     2087      -2.68       3.58       0.11     143.14       4.47       6.95
+     2144      -0.52       0.88       0.05     149.66       1.02       4.75
+     2201       1.08       0.50       0.07     245.24       1.19       3.18
+     2259       1.65       0.53       0.05     252.12       1.74       3.75
+     2316       1.77      -0.10      -0.00     273.26       1.77       2.67
+     2373       3.42      -1.09      -0.02     287.66       3.59       3.23
+     2431       5.14      -0.60      -0.03     276.65       5.17       3.99
+     2488       4.14       1.77      -0.04     246.85       4.50       3.89
+     2545       4.72       3.80      -0.05     231.18       6.06       3.08
+     2603       4.66       4.77      -0.08     224.34       6.67       3.41
+     2660       4.93       5.36      -0.10     222.64       7.28       3.47
+     2717       4.77       5.07      -0.02     223.21       6.96       2.87
+     2775     //////     //////     //////     //////     //////       2.94
+     2832     //////     //////     //////     //////     //////       1.77
+     2889     //////     //////     //////     //////     //////       4.38
+     2947     //////     //////     //////     //////     //////       4.97
+     3004     //////     //////     //////     //////     //////       1.16
+     3061     //////     //////     //////     //////     //////       2.76
+     3119     //////     //////     //////     //////     //////       4.12
+     3176     //////     //////     //////     //////     //////       3.57
+     3233     //////     //////     //////     //////     //////       4.49
+     3291     //////     //////     //////     //////     //////       5.03
+     3348     //////     //////     //////     //////     //////       3.03
+     3405     //////     //////     //////     //////     //////       3.24
+     3463     //////     //////     //////     //////     //////       3.77
+     3520     //////     //////     //////     //////     //////       4.54
+     3578     //////     //////     //////     //////     //////       6.16
+     3635     //////     //////     //////     //////     //////       6.35
+     3692     //////     //////     //////     //////     //////       3.72
+
+* : data invalidate by user or quality control
+
+PCA Status
++5V: OK +15V: OK -5V: OK -15V: OK
+PreHeating: OK OverHeated: OK VSWR:OK Current: 6.8
+
+Rain phenomenon : no rain
+
+Convective boundary layer at 1653 m (13:11:00)
+Sunrise/Sunset 03:50:38 - 19:24:49
+
+Interpolation information
+    137m no data
+    274m no data
+    457m no data
+    914m 40 / 9.2 m/s
+    1372m 58 / 7.4 m/s
+    1829m 46 / 3.3 m/s
+    2286m 262 / 1.7 m/s
+    2743m no data
+    3353m no data
+    4572m no data
+    5486m no data
+
+Projection information
+    137m no data
+    274m no data
+    457m no data
+    914m 40 / 9.2 m/s
+    137m no data
+    274m no data
+    457m no data
+    914m 130 / -0.1 m/s
+
