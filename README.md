@@ -66,3 +66,7 @@ Tkinter comes with initial creation of the environement, version tk 8.6.8, as an
 ```6_Classification.ipynb``` and ```7_Regression.ipynb```: TensorFlow model and development for classification and regression respectively. All results and figures can still be viewed on the notebook. The tfrecords for the test set and selected trained checkpoints are provided. 
 
 All codes are build on each other. Nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format is available. 
+
+### Note
+
+The spectrograms of the train, validation and test sets for both the classification and regression tasks can be found at https://github.com/MaL-R/RWP_spectrograms. Both repositories were separated in order to save time when cloning. This second one only has a visualisation purpose.
