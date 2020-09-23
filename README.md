@@ -2,7 +2,7 @@
 
 A Pulse-Doppler Radar Wind Profiler (RWP) is an active remote sensing instrument used in meteorology whose output product is a 3D wind field. A new method to retrieve radial wind velocity from spectrograms using Convolutional Neural Networks is introduced. The collection of data is provided by the Federal Office of Meteorology and Climatology MeteoSwiss and collected in Payerne, Switzerland. It covers the summer months of the year 2020. Only a subset is here provided and shows the folder architectur required for the codes to run.
 
-As a first step, spectrograms are split into different classes as follows: (0) no visible/measured wind, (1) visible wind only, (2) massive bird contamination (3) slight contamination and wind still visible. In terms of accuracy, precision and recall, the model achieves a solid performance of 94\% on the test set with a tendency to mix classes 1/3 and 2/3. 
+As a first step, spectrograms are split into different classes as follows: (0) no visible/measured wind, (1) visible wind only, (2) massive bird contamination (3) slight contamination and wind still visible. In terms of accuracy, precision and recall, the model achieves a solid performance of 94\% on the test set with a tendency to mix classes 1 and 2 with class 3. 
 
 Spectrograms either too heavily contaminated (class 2) or lacking a wind signal (class 0) are discarded in a second phase. A Doppler lidar provides the radial velocity for each spectrogram. Accross the test set, a R² of 0.97 is obtained along with a mean absolute error of 0.22 m/s.
 
@@ -65,4 +65,4 @@ Tkinter comes with initial creation of the environement, version tk 8.6.8, as an
 
 ```6_Classification.ipynb``` and ```7_Regression.ipynb```: TensorFlow model and development for classification and regression respectively. All results and figures can still be viewed on the notebook. The tfrecords for the test set and selected trained checkpoints are provided. 
 
-All codes are build on each other. nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format (pickle files, test tfrecords) is available. 
+All codes are build on each other. Nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format is available. 
