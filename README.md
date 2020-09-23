@@ -63,6 +63,6 @@ Tkinter comes with initial creation of the environement, version tk 8.6.8, as an
 
 ```5_ManualClassification.ipynb```: interactive tool which allows the task of manual classification. The code makes use of package Tkinter aforementionned.
 
-```6_Classification.ipynb```: TensorFlow model and development for the classification. All results and figures can still be viewed on the notebook. 
+```6_Classification.ipynb``` and ```7_Regression.ipynb```: TensorFlow model and development for classification and regression respectively. All results and figures can still be viewed on the notebook. The tfrecords for the test set and selected trained checkpoints are provided. 
 
-```7_Regression.ipynb```: TensorFlow model and development for the regression. All results and figures can still be viewed on the notebook. 
+All codes are build on each other. nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format (pickle files, test tfrecords) is available. 
