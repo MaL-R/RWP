@@ -1,4 +1,4 @@
-# RWP
+# Radial wind velocity retrieval from Doppler radar and lidar measurements using Deep Learning
 
 A Pulse-Doppler Radar Wind Profiler (RWP) is an active remote sensing instrument used in meteorology whose output product is a 3D wind field. A new method to retrieve radial wind velocity from spectrograms using Convolutional Neural Networks is introduced. The collection of data is provided by the Federal Office of Meteorology and Climatology MeteoSwiss and collected in Payerne, Switzerland. It covers the summer months of the year 2020. Only a subset is here provided and shows the folder architectur required for the codes to run.
 
