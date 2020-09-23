@@ -33,7 +33,7 @@ pip install –r requirements_pyenv.txt
 Clone the github
 ```
 cd /path/to/somewhere/
-git clone https://github.com/MaL-R/RWP/
+git clone https://github.com/MaL-R/RWP
 ```
 Set your local default environment
 ```
