@@ -1,4 +1,4 @@
-# Radial wind velocity retrieval from Doppler radar and lidar measurements using Deep Learning
+## Radial wind velocity retrieval from Doppler radar and lidar measurements using Deep Learning
 
 A Pulse-Doppler Radar Wind Profiler (RWP) is an active remote sensing instrument used in meteorology whose output product is a 3D wind field. A new method to retrieve radial wind velocity from spectrograms using Convolutional Neural Networks is introduced. The collection of data is provided by the Federal Office of Meteorology and Climatology MeteoSwiss and collected in Payerne, Switzerland. It covers the summer months of the year 2020. Only a subset is here provided and shows the folder architectur required for the codes to run.
 
@@ -8,11 +8,11 @@ Spectrograms either too heavily contaminated (class 2) or lacking a wind signal 
 
 A detailed description of the project can be found in the report in the repository.
 
-## Install matlab engine
+### Install matlab engine
 
 Follow instructions from https://www.mathworks.com/help/matlab/matlab-engine-for-python.html. It requires administrator rights.
 
-## Setting up an environment with pyenv
+### Setting up an environment with pyenv
 
 Install a python version if needed
 ```
@@ -42,7 +42,7 @@ pyenv local RWPenv
 ```
 The package Tkinter is necessary for the manual classification task and runs on C. As pyenv only manages python dependencies, it proved to be complex to install. However, as a last possibility it would be possible to use the system Python.
 
-## Setting up the environment with anaconda
+### Setting up the environment with anaconda
 
 ```
 conda create --name RWPenv python=3.6.9
@@ -51,7 +51,7 @@ conda install --file requirements_conda.txt
 ```
 Tkinter comes with initial creation of the environement, version tk 8.6.8, as anaconda also manages C dependencies. 
 
-## Codes
+### Codes
 
 ```1_Barbs&Rain.ipynb``` allows to visualise wind barbs and ground-based rain measurement on a chosen day. Raw data for days July 11 and 12, 2020 are provided.
 
