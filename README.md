@@ -40,7 +40,7 @@ Set your local default environment
 cd RWP
 pyenv local RWPenv
 ```
-The package Tkinter is necessary for the manual classification task and runs on C. As pyenv only manages python dependencies, it proved to be complex to install. However, as a last possibility it would be possible to use the system Python.
+The package Tkinter is necessary for the manual classification task and runs on C. As pyenv only manages python dependencies, it proved to be complex to install. However, as a last possibility using the system Python would be an option.
 
 ### Setting up the environment with anaconda
 
@@ -65,7 +65,7 @@ Tkinter comes with initial creation of the environement, version tk 8.6.8, as an
 
 ```6_Classification.ipynb``` and ```7_Regression.ipynb```: TensorFlow model and development for classification and regression respectively. All results and figures can still be viewed on the notebook. The tfrecords for the test set and selected trained checkpoints are provided. 
 
-All codes are build on each other. Nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format is available. 
+All codes are build on each other. Nevertheless, they will run independently as long as either raw lidar and radar data or an intermediate format (pickle or tfrecord) is available. 
 
 ### Note
 
